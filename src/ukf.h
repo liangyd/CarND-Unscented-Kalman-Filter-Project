@@ -66,7 +66,21 @@ public:
 
   ///* Sigma point spreading parameter
   double lambda_;
+  
+  //NIS value for lidar data
+  double NIS_lidar_;
 
+  //NIS value for radar data
+  double NIS_radar_;
+  
+  //message counter
+  int msg_counter_;
+
+  //counter for NIS_lidar_ value larger than 95%
+  int NIS_lidar_counter_;
+
+  //counter for NIS_radar_ value larger than 95%
+  int NIS_radar_counter_;
 
   /**
    * Constructor
